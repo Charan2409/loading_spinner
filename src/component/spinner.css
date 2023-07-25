@@ -1,0 +1,20 @@
+.spinner {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  border: 10px solid grey;
+  height: 80px;
+  width: 80px;
+  transform: translate(50%, -50%);
+  border-right-color: blue;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  from {
+    transform: translate(50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(50%, -50%) rotate(360deg);
+  }
+}
